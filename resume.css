@@ -1,0 +1,57 @@
+header,nav，footer{
+	display: block; /*针对不支持的浏览器设置HTML5默认样式*/
+}
+*{margin:0;padding: 0;}
+li{list-style-type: none;}
+a{text-decoration: none;color: black;}
+a:focus,a:hover,a:active,#nav ul li a.current{color: grey;font-weight: bold;}
+body{background-color: #E0FFFF;font-size: 20px; font-family:"microsoft yahei";}
+#content{width: 70%;margin: 1px auto;background-color: white; border:2px solid grey;}
+header{width:70%;margin:0 auto;font-weight: normal;}
+header h1{float: left;margin: 3px 5px 0px 0;}
+header h3{float: left;margin:22px 0 3px 0;color: grey;}
+header ul{float:left;}
+header ul li{margin:28px 0 12px 12px;float: left;font-size: 18px;}
+.clear{clear: both;}
+#nav{position:fixed;top:180px;right:0;}
+nav ul li{border: 2px solid black;padding: 3px;margin:5px;background-color: #E0FFFF;
+	-moz-border-radius:8px;-webkit-border-radius:8px;border-radius: 8px;
+    -moz-box-shadow:2px 2px 5px #666;-webkit-box-shadow:2px 2px 5px #666;
+    box-shadow: 2px 2px 5px #666;}/*CSS3多浏览器兼容*/
+#education h4{padding-left: 40px; color: white;
+	background: black url(images/edu.jpg) no-repeat 10px center;}
+#skill h4{padding-left: 40px; color: white;
+	background: black url(images/skill.jpg) no-repeat 10px center;clear: both;}
+#project h4{padding-left: 40px; color: white;
+	background: black url(images/project.jpg) no-repeat 10px center;}
+#experience h4{padding-left: 40px; color: white;clear: both;
+	background: black url(images/exp.jpg) no-repeat 10px center;}
+#award h4{padding-left: 40px; color: white;
+	background: black url(images/award.jpg) no-repeat 10px center;}
+#evaluation h4{padding-left: 40px; color: white;
+	background: black url(images/eva.jpg) no-repeat 10px center;}
+#content ul{margin:5px 0;}
+#education ul li{float: left;padding-left: 40px; }
+#skill ul{width: 90%;}
+#skill ul li{padding-left: 40px;background: white url(images/icon.jpg) no-repeat 10px 4px;margin:5px 0;}
+dl{margin:5px 0;}
+dt{padding-left: 40px;background: white url(images/icon2.jpg) no-repeat 10px 4px;
+clear: both;}
+#project dd .pre{float:left;text-indent: 40px; }
+#project dd .behind{float:left;width:80%;/*text-indent: 40px;*/ }/*保留修改*/
+#experience dd{text-indent: 40px;}
+#experience .position{margin-left: 40px;}
+#award ul li{padding-left: 40px;background: white url(images/icon.jpg) no-repeat 10px 4px;}
+#award .award6{margin-left: 10px;}
+#award .award5{margin-left: 10px;}
+#award .award4{margin-left: 112px;}
+#award .award3{margin-left: 124px;}
+#award .award2{margin-left: 188px;}
+#award .award1{margin-left: 207px;}
+#award .top10{margin-left: 10px;}
+#evaluation ul li{padding-left: 40px;background: white url(images/icon.jpg) no-repeat 10px 4px;}
+footer{font-size:15px;text-align:center;margin: 10px 0;}
+/*针对fixed定位的IE6 hack*/
+*html,*html body{background-image: url(about:blank);background-attachment: fixed;}
+*html #nav{position: absolute;
+	top: expression(((e=document.documentElement.scrollTop)?e:document.body.scrollTop)+180+'px');}
